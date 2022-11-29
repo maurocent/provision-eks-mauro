@@ -1,3 +1,4 @@
+/*
 module "allow_eks_access_iam_policy" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-policy"
   version = "5.3.1"
@@ -76,3 +77,4 @@ module "eks_admins_iam_group" {
   group_users                       = [module.user1_iam_user.iam_user_name]
   custom_group_policy_arns          = [module.allow_assume_eks_admins_iam_policy.arn]
 }
+*/

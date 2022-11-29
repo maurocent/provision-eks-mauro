@@ -6,7 +6,7 @@ variable "region" {
 variable "profile" {
   description = "aws profile"
   type        = string
-  default     = "aws-cent"
+  default     = "centeno-2"
 }
 #############################
 variable "cluster_name" {

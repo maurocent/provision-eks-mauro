@@ -1,6 +1,5 @@
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  #version = "18.26.6"
   version = "18.31.0"
 
   cluster_name    = var.cluster_name
@@ -29,6 +28,7 @@ module "eks" {
       name = "node-group-1"
       instance_types = ["m5.large"]
       capacity_type = "ON_DEMAND"
+
       
       min_size     = 1
       max_size     = 2
